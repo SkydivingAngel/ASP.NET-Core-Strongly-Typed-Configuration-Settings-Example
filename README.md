@@ -73,3 +73,10 @@ Example of DI in controller:
 
 Prefer **"IOptionsSnapshot"** over "IOptions" in order to have always the
 latest values from ""appsettings.json".
+
+PS: if you need to get the latest values from a **Middleware** use the following sintax:
+
+        public async Task Invoke(HttpContext httpContext)
+        {
+            IOptionsSnapshot<AppSettings> appSettingsCurrent = httpContext.RequestServices.GetRequiredService<IOptionsSnapshot<AppSettings>>();
+            AppSettings appSettings = appSettingsCurrent.Value;
