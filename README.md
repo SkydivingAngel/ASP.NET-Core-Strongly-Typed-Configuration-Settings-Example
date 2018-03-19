@@ -1,6 +1,6 @@
 ASP.NET Core 2 Strongly Typed Configuration Settings Example
 
-1) Create a Class based on "appsettings.json":
+1. Create a Class based on "appsettings.json":
 
 Example of appsettings.json:
 
@@ -49,7 +49,7 @@ Example of Class containing "appsettings":
 		public string Password { get; set; }
 	}
 
-2)In Startup.cs add the following line:
+2. In Startup.cs add the following line:
 
 	public void ConfigureServices(IServiceCollection services)
 	{
@@ -58,7 +58,7 @@ Example of Class containing "appsettings":
 		services.Configure<AppSettings>(Configuration.GetSection("AppSettings"));
 				
 	
-3)Use Dependency Injection to pass the Class "AppSettings":
+3. Use Dependency Injection to pass the Class "AppSettings":
 
 Example of DI in controller:
 
