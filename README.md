@@ -51,11 +51,11 @@ Example of Class containing "appsettings":
 
 2. In Startup.cs add the following line:
 
-	public void ConfigureServices(IServiceCollection services)
-	{
-		//this will deserialize "appsettings.json" to "AppSettings" Class
-		//and will make the class available for Dependency injection
-		services.Configure<AppSettings>(Configuration.GetSection("AppSettings"));
+		public void ConfigureServices(IServiceCollection services)
+		{
+			//this will deserialize "appsettings.json" to "AppSettings" Class
+			//and will make the class available for Dependency injection
+			services.Configure<AppSettings>(Configuration.GetSection("AppSettings"));
 				
 	
 3. Use Dependency Injection to pass the Class "AppSettings":
