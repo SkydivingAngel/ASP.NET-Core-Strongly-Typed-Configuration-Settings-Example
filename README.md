@@ -30,7 +30,7 @@ Example of Class containing "appsettings":
 	public class AppSettings
 	{
 		public Jwt Jwt { get; set; }
-		public Credenziali Credenziali { get; set; }
+		public Credentials Credentials { get; set; }
 		public List<string> IpsAllowed { get; set; }
 	}
 
