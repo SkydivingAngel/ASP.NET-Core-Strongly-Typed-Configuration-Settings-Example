@@ -13,7 +13,7 @@ Example of appsettings.json:
 		  "Issuer": "WebServiceCore2",
 		  "Audience": "WebServiceCore2"
 		},
-		"Credenziali": {
+		"Credentials": {
 		  "Username": "user",
 		  "Password": "pwd"
 		},
@@ -43,7 +43,7 @@ Example of Class containing "appsettings":
 		public string Audience { get; set; }
 	}
 
-	public class Credenziali
+	public class Credentials
 	{
 		public string Username { get; set; }
 		public string Password { get; set; }
